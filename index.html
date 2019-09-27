@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="og:title" property="og:title" content="Dit is de homepage van mijn webshop">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,Fro,JavaScript">
+    <meta name="author" content="Almar Gemmel">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="description"
+        content="Deze site is mijn front end examen, en hier maak ik met behulp van bootstrap een zo goed mogelijke website waarmee ik kan slagen voor mijn examen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <title>Homepage - Webshop(Fro-Examen)</title>
+    <script>
+        $(function () {
+            var date = new Date().getFullYear();
+            $('.theDate').html(date);
+            $('#carousel-header .carousel').carousel({
+                interval: 4000
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="body">
+
+        <div id="header" role="banner">
+
+            <div class="nav-kleur">
+                <div class="container-fluid">
+
+                    <div class="row">
+
+                        <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                            <nav class="navbar navbar-default navbar-xs">
+                                <div class="navbar-header visible-xs">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" title="Home" href="index.html">Webshop</a>
+                                </div>
+                                <div id="navbar" class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href="index.html" title="Home">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="producten.html" title="Producten">Producten</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html" title="Contact">Contact</a>
+                                        </li>
+                                        <li data-active-if="Diensten">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Meer <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="over-ons.html" title="Over ons">Over Ons</a>
+                                                </li>
+                                                <li><a href="winkelwagen.html" title="Winkelwagen">Winkelwagen</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-wrapper">
+                <div id="carousel-header" class="carousel carouselfirst slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item bg bg1 active"></div>
+                        <div class="item bg bg2"></div>
+                        <div class="item bg bg3"></div>
+                    </div>
+                </div>
+                <div class="carousel-tekst">
+                    <div class="header-text">
+                        <h1>Webshop</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <div class="veld">
+                            <h2>Welkom</h2>
+                            <hr>
+                            <p>Welkom op onze website, hier kan je verschillende voetbalproducten vinden voor een heel
+                                erg voordelige prijs. Alles is te vinden op onze site. Als je iets niet kan vinden kan
+                                je
+                                ook contact met ons opnemen.
+                            </p>
+                            <hr>
+                            <a href="index.html" class="btn btn-primary center-block" title="Home" rel="external nofollow">Home</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <div class="veld">
+                            <h2>Producten</h2>
+                            <hr>
+                            <p>
+                                Wij verkopen producten van hoge kwaliteit, deze producten zijn ook nergens anders te
+                                koop.
+                                Neem een kijkje bij onze producten en misschien vindt u wel een product dat precies voor
+                                u gemaakt is, aarzel niet.
+                            </p>
+                            <hr>
+                            <a href="producten.html" title="Producten" class="btn btn-primary center-block"
+                                rel="external nofollow">Producten</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-4">
+                        <div class="veld">
+                            <h2>Uitleg</h2>
+                            <hr>
+                            <p>
+                                Hoe je onze producten moet gebruiken staat in de uitleg die meegeleverd is, ook kan je
+                                zien hoe
+                                het werkt bij onze productomschrijving. Als u alles heeft gelezen maar dan nog niet
+                                snapt hoe het werkt
+                                stuur dat vooral een bericht.
+                            </p>
+                            <hr>
+                            <a href="over-ons.html" title="Over ons" class="btn btn-primary center-block" rel="external nofollow">Over
+                                Ons</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer" class="bg-primary">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p>
+                            © <span class="theDate"></span> - Webshop
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="og:title" property="og:title" content="Dit is de homepage van mijn webshop">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,Fro,JavaScript">
+    <meta name="author" content="Almar Gemmel">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="description"
+        content="Deze site is mijn front end examen, en hier maak ik met behulp van bootstrap een zo goed mogelijke website waarmee ik kan slagen voor mijn examen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <title>Homepage - Webshop(Fro-Examen)</title>
+    <script>
+        $(function () {
+            var date = new Date().getFullYear();
+            $('.theDate').html(date);
+            $('#carousel-header .carousel').carousel({
+                interval: 4000
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="body">
+
+        <div id="header" role="banner">
+
+            <div class="nav-kleur">
+                <div class="container-fluid">
+
+                    <div class="row">
+
+                        <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                            <nav class="navbar navbar-default navbar-xs">
+                                <div class="navbar-header visible-xs">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" title="Home" href="index.html">Webshop</a>
+                                </div>
+                                <div id="navbar" class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href="index.html" title="Home">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="producten.html" title="Producten">Producten</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html" title="Contact">Contact</a>
+                                        </li>
+                                        <li data-active-if="Diensten">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Meer <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="over-ons.html" title="Over ons">Over Ons</a>
+                                                </li>
+                                                <li><a href="winkelwagen.html" title="Winkelwagen">Winkelwagen</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-wrapper">
+                <div id="carousel-header" class="carousel carouselfirst slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item bg bg1 active"></div>
+                        <div class="item bg bg2"></div>
+                        <div class="item bg bg3"></div>
+                    </div>
+                </div>
+                <div class="carousel-tekst">
+                    <div class="header-text">
+                        <h1>Webshop</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="main">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 text-center">
+                        <div class="product-veld">
+                            <h2>Mbappe starterpack</h2>
+                            <img src="images/mbappe.jpg" class="img-responsive center-block" />
+                            <hr>
+                            <h3>Productbeschrijving</h3>
+                            <p>
+                                Dit is de mbappe starterpack, wat dit inhoud is dat je een pakket krijgt met een
+                                trainingssysteem
+                                zoals mbappe het zou gebruiken. Wat er dan allemaal bij zit is een voetbal om mee te
+                                oefenen, pionnen
+                                om te oefenen met dribbelen, een klein doeltje waar je op kan schieten en een poster met
+                                de handtekening
+                                van mbappe erop.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="jumbotron">
+                            <h2>Standard edition</h2>
+                            <h4>Prijs: $40</h4>
+                            <p>voor 23:59 besteld, morgen in huis</p>
+                            <a href="winkelwagen2.html" class="btn btn-primary">In Winkelwagen</a>
+                            <h3>bezorgopties</h3>
+                            <p>
+                                bezorging ook op zondag<br>
+                                's avonds bezorgd
+                            </p>
+                            <hr>
+                            <p>
+                                Ophalen bij onze locatie<br>
+                                binnen 30 dagen gratis retourneren<br>
+                                dag en nacht klantenservice
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div id="footer" class="bg-primary">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p>
+                            © <span class="theDate"></span> - Webshop
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

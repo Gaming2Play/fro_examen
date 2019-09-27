@@ -1,0 +1,522 @@
+html,
+body {
+    background: #fff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    padding: 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    line-height: 22px;
+    margin: 0 0 22px 0;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+#header {
+    text-align: center;
+}
+
+.nav-kleur {
+    background: #fff;
+    padding: 30px 0;
+}
+
+.navbar {
+    z-index: 99;
+}
+
+.navbar-default {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    z-index: 9999;
+}
+
+.f-r {
+    float: right;
+}
+
+h1 {
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding: 20px;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 0 600px;
+}
+
+.header-text {
+    padding-top: 150px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.navbar-default .navbar-nav>li:first-child a {
+    border-left: none;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background-color: transparent;
+    color: #1ea329;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+@media (max-width: 767px) {
+
+    body {
+        padding-top: 50px
+    }
+
+    .navbar-xs {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+
+    .navbar-default .navbar-brand,
+    .navbar-default .navbar-brand:hover {
+        color: #fff;
+    }
+
+    .navbar-default .navbar-header {
+        background: #188121;
+    }
+
+    .navbar-default li {
+        background: #fff;
+        border: 1px solid #000;
+    }
+
+
+    .navbar-default .navbar-nav {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: rgb(31, 31, 31);
+    }
+
+    .navbar-default .navbar-collapse {
+        border: none;
+        color: #fff;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        border: none;
+    }
+
+    .navbar-default .navbar-nav>li a {
+        text-align: center;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        padding: 0;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        background: dimgray;
+        color: #000;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+        color: #000;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        width: 100%;
+        display: table;
+    }
+
+    .navbar-nav>li {
+        float: none;
+        display: table-cell;
+    }
+
+    nav .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    nav .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+#carousel-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.carousel-tekst {
+    position: relative;
+    z-index: 999;
+}
+
+.carousel-wrapper {
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    #carousel-header {
+        height: 300px;
+    }
+
+    .carousel-tekst {
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    #carousel-header {
+        height: 400px;
+    }
+
+    .carousel-tekst {
+        height: 400px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    #carousel-header {
+        height: 500px;
+    }
+
+    .carousel-tekst {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #carousel-header {
+        height: 600px;
+    }
+
+    .carousel-tekst {
+        height: 600px;
+    }
+
+}
+
+#carousel-header .carousel-inner .bg1 {
+    background-image: url("https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+#carousel-header .carousel-inner .bg2 {
+    background-image: url("https://images.pexels.com/photos/1667583/pexels-photo-1667583.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+#carousel-header .carousel-inner .bg3 {
+    background-image: url("https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+
+#carousel-header .carousel-indicators {
+    z-index: 5;
+}
+
+#carousel-header .carousel-inner,
+#carousel-header .carousel .item,
+#carousel-header .carousel-inner .bg {
+    height: 100%;
+}
+
+#carousel-header .carousel-inner .bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+
+    .carousel-fade .carousel-inner>.item.next,
+    .carousel-fade .carousel-inner>.item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-fade .carousel-inner>.item.prev,
+    .carousel-fade .carousel-inner>.item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-fade .carousel-inner>.item.next.left,
+    .carousel-fade .carousel-inner>.item.prev.right,
+    .carousel-fade .carousel-inner>.item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#footer {
+    position: relative;
+    height: auto;
+    padding: 15px 0;
+}
+
+@media (min-width: 767px) {
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+
+    #footer {
+        padding: 20px 0;
+    }
+
+    #footer p {
+        margin: 0;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    #footer p {
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+
+.bg-primary {
+    background: #eee;
+    color: #000;
+}
+
+#main {
+    margin: 50px 0;
+}
+
+#main img {
+    max-height: 200px;
+}
+
+.voetballers a {
+    float: right;
+    width: 150px;
+    background: #1ea329;
+    border: #1ea329;
+}
+
+.voetballers a:hover {
+    float: right;
+    background: #188121;
+    border: #188121;
+}
+
+.veld h2 {
+    text-align: center;
+}
+
+.veld {
+    border: 5px solid #1ea329;
+    min-height: 320px;
+    border-radius: 30px 30px 0 0;
+}
+
+.veld p {
+    padding: 0 20px;
+}
+
+.veld .btn-primary {
+    width: 200px;
+    background: #1ea329;
+    border: #1ea329;
+}
+
+.veld .btn-primary:hover {
+    width: 200px;
+    background: #188121;
+    border: #188121;
+}
+
+.jumbotron .btn-primary {
+    width: 200px;
+    background: #1ea329;
+    border: #1ea329;
+}
+
+.jumbotron .btn-primary:hover {
+    width: 200px;
+    background: #188121;
+    border: #188121;
+}
+
+.jumbotron h2 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 50px;
+}
+
+.jumbotron p {
+    font-size: 14px;
+}
+
+.jumbotron img {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.product-veld p {
+    padding: 25px;
+    margin: 0 auto;
+    height: 250px;
+}
+
+@media(max-width:767px) {
+    .navbar-brand {
+        font-size: 15px;
+    }
+
+    .veld {
+        margin: 20px 0;
+    }
+
+    .nav-kleur {
+        background: #fff;
+        margin-top: -1px;
+        padding: 0;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    #main img {
+        margin: 0 auto;
+    }
+
+    .jumbotron {
+        margin-top: 20px;
+    }
+}
+
+@media(min-width: 768px) {
+    .veld {
+        margin: 20px 0;
+    }
+
+    h1 {
+        margin: 0 300px;
+    }
+    .jumbotron {
+        margin-top: 20px;
+    }
+}
+
+@media(min-width: 992px) {
+    h1 {
+        margin: 0 400px;
+    }
+    .jumbotron {
+        margin-top: 0px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .veld {
+        margin: 0;
+    }
+
+    h1 {
+        margin: 0 600px;
+    }
+}
